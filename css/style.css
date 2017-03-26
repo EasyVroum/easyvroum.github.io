@@ -367,6 +367,27 @@ header
 {
 	margin: 2em;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#phone-video
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.video
+{
+	z-index: 2;
+	width: 85%;
+	height: 85%;
 }
 
 .solution-text
@@ -530,6 +551,7 @@ input:not([type='color']):not([type='submit']):focus,textarea:focus
 }
 
 
+
 @keyframes animation-voiture
 {
 	from
@@ -634,8 +656,8 @@ input:not([type='color']):not([type='submit']):focus,textarea:focus
 
   #phone-image img
   {
-  	height: 27em;
-  	width: 20em;
+  	height: 30em;
+  	width: 19em;
   }
 
 }
@@ -655,8 +677,8 @@ input:not([type='color']):not([type='submit']):focus,textarea:focus
 
   #phone-image img
   {
-  	height: 20em;
-  	width: 15em;
+  	height: 22em;
+  	width: 14em;
   }
 
 
