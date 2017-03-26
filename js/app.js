@@ -18,11 +18,13 @@ $(function() {
 	});
 
 	var phonevideo = $("#phone-video")[0];
+	var waypointReached = false;
 
 	var waypointVideos = new Waypoint( {
 		element: $("#nos-solutions"),
 		handler: function()
 		{
+			waypointReached = true;
 			if(phonevideo.paused)
 			{
 				phonevideo.play();
@@ -31,7 +33,7 @@ $(function() {
 	});
 
 	window.setInterval(function() {
-		if(phonevideo.paused)
+		if(phonevideo.paused && waypointReached)
 		{
 			phonevideo.play();
 		}
