@@ -383,6 +383,19 @@ header
 	margin: auto;
 }
 
+#laptop-video
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 73%;
+	height: 82%;
+}
+
+
 .video
 {
 	z-index: 2;

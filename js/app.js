@@ -18,6 +18,8 @@ $(function() {
 	});
 
 	var phonevideo = $("#phone-video")[0];
+	var laptopvideo = $("#laptop-video")[0];
+
 	var waypointReached = false;
 
 	var waypointVideos = new Waypoint( {
@@ -29,6 +31,12 @@ $(function() {
 			{
 				phonevideo.play();
 			}
+
+			if(laptopvideo.paused)
+			{
+				laptopvideo.play();
+			}
+
 		}
 	});
 
@@ -37,5 +45,11 @@ $(function() {
 		{
 			phonevideo.play();
 		}
+
+		if(laptopvideo.paused && waypointReached)
+		{
+			laptopvideo.play();
+		}
+
 	}, 2000);
 });
